@@ -1,0 +1,19 @@
+/* patch.hoc
+   v. 1.2 10/19/2001 NTC
+
+   http://www.neuron.yale.edu/neuron/static/docs/elementarytools/writcode.htm
+ */
+
+// make graphical interface tools available to this program
+load_file("nrngui.hoc")
+
+// specify the properties of the model cell
+create soma    // model topology
+access soma    // default section = soma
+
+soma {
+   diam = 10   // soma dimensions in um
+   L = 10/PI   //   surface area = 100 um^2
+}
+
+
